@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YarTempColor</string>
+
+    <string name="network_error">No network connection</string>
+    <string name="degrees_celsius">°C</string>
+
+    <string name="temp_site_URL">http://yartemp.com</string>
+    <string name="temp_data_URL">http://yartemp.com/webdata/</string>
+</resources>
