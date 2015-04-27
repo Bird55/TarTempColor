@@ -13,20 +13,20 @@ class Constants {
 
     //Массив цветов фона:
     static final String[] colors = {
-            "#15ADFF", "#01BAFF", "#21B1FF", "#27B3FF", "#2DB5FF", "#33B7FF",
-            "#39B9FF", "#3FBBFF", "#45BDFF", "#4BBFFF", "#51C1FF", "#57C3FF",
-            "#5DC5FF", "#63C7FF", "#69C9FF", "#6FCBFF", "#75CDFF", "#07BCFF",
-            "#81D1FF", "#87D3FF", "#8DD5FE", "#93D7FE", "#99D9FE", "#9FDBFE",
-            "#A5DDFE", "#ABDFFE", "#B1E1FE", "#B7F3FE", "#BDF5FE", "#C3E7FE",
-            "#C9E9FE", "#CFEBFE", "#D5EDFE", "#DBEFFE", "#E1F1FE", "#E7F3FE",
-            "#EDF5FE", "#F3F7FE", "#F9F9FE", "#FFFBFE", "#FFFBFE", "#FFF8F7",
-            "#FFF4F1", "#FFF1EA", "#FFEEE4", "#FFEADD", "#FFE7D7", "#FFE4D0",
-            "#FFE0CA", "#FFDDC3", "#FFDABD", "#FFD6B6", "#FFD3B0", "#FFD0A9",
-            "#FFCCA3", "#FFC99C", "#FFC696", "#FFC28F", "#FFBF89", "#FFBC82",
-            "#FFB87C", "#FFB575", "#FFB26F", "#FFAE68", "#FFAB62", "#FFA85B",
-            "#FFA455", "#FFA14E", "#FF9E48", "#FF9A41", "#FF973B", "#FF9434",
-            "#FF902E", "#FF8D27", "#FF8A21", "#FF861A", "#FF8314", "#FF800D",
-            "#FF7C07", "#FF7900", "#FF7900"};
+            "#0000FF", "#0006FF", "#000CFF", "#0012FF", "#0018FF", "#001EFF",
+            "#0024FF", "#002AFF", "#0030FF", "#0036FF", "#003CFF", "#0042FF",
+            "#0048FF", "#004EFF", "#0054FF", "#005AFF", "#0060FF", "#0066FF",
+            "#006CFF", "#0072FF", "#0078FF", "#007EFF", "#0084FF", "#008AFF",
+            "#0090FF", "#0096FF", "#009CFF", "#00A2FF", "#00A8FF", "#00AEFF",
+            "#00B4FF", "#00BAFF", "#00C0FF", "#00C6FF", "#00CCFF", "#00D2FF",
+            "#00D8FF", "#00DEFF", "#00E4FF", "#00EAFF", "#FFF000", "#FFEA00",
+            "#FFE400", "#FFDE00", "#FFD800", "#FFD200", "#FFCC00", "#FFC600",
+            "#FFC000", "#FFBA00", "#FFB400", "#FFAE00", "#FFA800", "#FFA200",
+            "#FF9C00", "#FF9600", "#FF9000", "#FF8A00", "#FF8400", "#FF7E00",
+            "#FF7800", "#FF7200", "#FF6C00", "#FF6600", "#FF6000", "#FF5A00",
+            "#FF5400", "#FF4E00", "#FF4800", "#FF4200", "#FF3C00", "#FF3600",
+            "#FF3000", "#FF2A00", "#FF2400", "#FF1E00", "#FF1800", "#FF1200",
+            "#FF0C00", "#FF0600", "#FF0000"};
 
     /**
      * Преобразуем данные в число, для определения цвета фона
@@ -38,12 +38,13 @@ class Constants {
         int col;
         int n = tempr.indexOf(".");
 
-        Log.d(LOG_TAG, "getColor tempt=" + tempr + " n=" + n);
-        if (tempr.substring(0, 1).equals("+") || tempr.substring(0, 1).equals("-")) {
-            col = Integer.parseInt(tempr.substring(1, n-1));
-        } else {
+//        Log.d(LOG_TAG, "getColor tempt=" + tempr + " n=" + n);
+        if (n == 0)
+            col = 0;
+        else if (n == -1)
+            col = Integer.parseInt(tempr);
+        else
             col = Integer.parseInt(tempr.substring(0, n));
-        }
 
         return (Color.parseColor(colors[40 + (col)]));
     }
