@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical|center_horizontal"
+    android:padding="@dimen/widget_margin"
     android:id="@+id/linearLayout">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="31sp"
         android:id="@+id/Temp"
-        android:layout_gravity="center"
-        android:textSize="28sp"
-        android:text="+25 °C"/>
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:text="+25°C"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="14sp"
+        android:id="@+id/Delta"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:text="+2°C/h"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="14sp"
+        android:id="@+id/Time"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:text="loading..."/>
 </LinearLayout>

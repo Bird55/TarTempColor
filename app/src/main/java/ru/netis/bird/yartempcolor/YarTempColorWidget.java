@@ -16,10 +16,10 @@ public class YarTempColorWidget extends AppWidgetProvider {
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         super.onUpdate(context, appWidgetManager, appWidgetIds);
-        Log.d(Constants.LOG_TAG, "YarTempColor onUpdate");
+//        Log.d(Constants.LOG_TAG, "YarTempColor onUpdate");
         UpdateWidget myUpdateWidget = new UpdateWidget(context, appWidgetManager);
         for (int widgetId : appWidgetIds) {
-            Log.d(Constants.LOG_TAG, "YarTempColor onUpdate [" + widgetId + "]");
+//            Log.d(Constants.LOG_TAG, "YarTempColor onUpdate [" + widgetId + "]");
             myUpdateWidget.updateWidget(widgetId);
         }
     }
@@ -27,7 +27,7 @@ public class YarTempColorWidget extends AppWidgetProvider {
     @Override
     public void onReceive(@NonNull Context context, @NonNull Intent intent) {
         super.onReceive(context, intent);
-        Log.d(Constants.LOG_TAG, "YarTempColor onReceive");
+//        Log.d(Constants.LOG_TAG, "YarTempColor onReceive");
 /*
         // Извлекаем ID экземпляра
         int mAppWidgetId = AppWidgetManager.INVALID_APPWIDGET_ID;
@@ -52,13 +52,13 @@ public class YarTempColorWidget extends AppWidgetProvider {
 
     @Override
     public void onEnabled(Context context) {
-        Log.d(Constants.LOG_TAG, "YarTempColor onEnable");
+//        Log.d(Constants.LOG_TAG, "YarTempColor onEnable");
         super.onEnabled(context);
     }
 
     @Override
     public void onDisabled(Context context) {
-        Log.d(Constants.LOG_TAG, "YarTempColor onDisable");
+//        Log.d(Constants.LOG_TAG, "YarTempColor onDisable");
         super.onDisabled(context);
     }
 }

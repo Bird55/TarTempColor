@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YarTempColor</string>
+    <string name="degrees_celsius">°C</string>
+    <string name="degrees_delta_celsius">°C/ч</string>
+    <string name="network_error">Нет доступа к сети</string>
+    <string name="temp_data_URL">http://yartemp.com/webdata/</string>
+    <string name="temp_site_URL">http://yartemp.com</string>
+    <string name="loading">загрузка&#8230;</string>
+</resources>

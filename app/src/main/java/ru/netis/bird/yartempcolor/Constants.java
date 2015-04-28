@@ -1,15 +1,15 @@
 package ru.netis.bird.yartempcolor;
 
 import android.graphics.Color;
-import android.util.Log;
+//import android.util.Log;
 
 /**
  * Created by bird on 25.04.2015
  */
 class Constants {
-    final static String LOG_TAG = "myLogs";
-    final static boolean DEBUG = true;
-    final static String ACTION_UPDATE = "ru.netis.bird.yartempcolor.update";
+//    final static String LOG_TAG = "myLogs";
+//    final static boolean DEBUG = true;
+//    final static String ACTION_UPDATE = "ru.netis.bird.yartempcolor.update";
 
     //Массив цветов фона:
     static final String[] colors = {
@@ -34,11 +34,11 @@ class Constants {
      * @param tempr текущая температура
      * @return Число сооветствующее цвету фона
      */
-    static int getColor(String tempr) {
+    static int getBackColor(String tempr) {
         int col;
         int n = tempr.indexOf(".");
 
-//        Log.d(LOG_TAG, "getColor tempt=" + tempr + " n=" + n);
+//        Log.d(LOG_TAG, "getBackColor tempt=" + tempr + " n=" + n);
         if (n == 0)
             col = 0;
         else if (n == -1)
